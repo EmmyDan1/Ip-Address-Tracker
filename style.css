@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    background-image: url(./images/pattern-bg-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.header-content {
+    margin: auto;
+}
+
+.header-content h2 {
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+
+.search-box {
+    margin-bottom: 50px;
+
+}
+
+.search-box input {
+    width: calc(100% - 100px);
+    width: 400px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-box button {
+    width: 50px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    margin-top: -40px;
+    border-radius: 10px;
+}
+
+.info-item {
+    text-align: center;
+}
+
+
+.info-cont p {
+    font-size: 10px;
+    opacity: 0.5;
+    margin-top: 16px;
+}
+
+.info-cont h1 {
+    font-size: 25px;
+    margin-top: 12px;
+}
+
+.border1 {
+    border: 1px solid rgb(240 240 240);
+    height: 70px;
+    margin-top: 30px;
+
+}
+
+.info4 p {
+    margin-top: 40px;
+}
+
+.info4 h1 {
+    margin: -6px;
+    margin-top: 9px;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    margin-top: -117px;
+    z-index: -1;
+}
+
+.info1 {
+    margin-left: 20px;
+}
+
+.info4 {
+    margin-right: 40px
+}
+
+@media(max-width: 500px) {
+    .search-box input {
+        width: calc(100% - 100px);
+        width: 300px;
+        padding: 15px 10px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        margin-left: 15px;
+    }
+    .info-box{
+        display: flex;
+        flex-direction: column;
+        height: 270px;
+        width: 350px;
+        border-radius: 10px;
+        margin-top: -70px;
+    }
+    .header-content h2{
+       margin-left: 69px;
+    }
+}
